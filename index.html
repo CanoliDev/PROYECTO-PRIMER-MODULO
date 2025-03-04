@@ -9,10 +9,11 @@
     <h1 id="title">Canoli Formulario</h1>
     <p id="description">aca podras colaborarme relizando la encuesta para poder obtner el titulo<p>
     <form id="survey-form">
-     <label for="name-label" >Name:</label><input id="name-label" type="text" required placeholder="Enter Your Name"></input>
-     <label for="email-label"> Email:</label><input id="email-label" type="email" required placeholder="Enter Your Email"></input>
-     <label for="number-label">Age:</label><input id="number-label" type="number" required placeholder="Enter Your Age" min="13 max="120"></input>
-    <label for="dropdown">¿Que te describe mejor?
+     <div><label for="name" id="name-label">Name:</label><input id="name" type="text" required placeholder="Enter Your Name"></input>
+     <label for="email" id="email-label"> Email:</label><input id="email" type="email" required placeholder="Enter Your Email"></input>
+     <label for="number" id="number-label">Age:</label><input id="number" type="number" required placeholder="Enter Your Age" min="13" max="120"></input>
+     </div>
+      <div><label for="dropdown">¿Que te describe mejor?
         <select id="dropdown" >
           <option value="">(elige una papu)</option>
           <option value="1">emprendedor</option>
@@ -20,15 +21,25 @@
         <option value="3">desarrolador , </option>
         <option value="4">arquitecto de mi vida</option>
         </select>
-    <legend>Te gusta ver streamers? (requerido)</legend>
-      <label for="si"></label> Siclas<input type="radio" id="si" checked name="strimers"></input> 
-      <label for="no"></label> Nel <input type="radio" id="no" checked name="strimers"></input>
-     <legend>¿En que te quieres enfocar? (requerido)</legend> 
-      <label><input type="checkbox" /> programacion</label>
-      <label><input type="checkbox" /> derecho</label>
-      <label><input type="checkbox" /> streamer</label>
-      <label><input type="checkbox" /> mesero</label>
-      <label><input type="checkbox" /> mariachi</label>
-     <label><input type="checkbox" /> nueva zelanda</label>
+      </div>
+      <div><legend>Te gusta ver streamers? (requerido)</legend>
+      <label for="si"> Siclas<input type="radio" id="si" checked name="strimers" value="yes"></input> </label>
+      <label for="no"></label> Nel <input type="radio" id="no" checked name="strimers" value="no"></input>
+      </div>
+      <div>
+        <legend>¿En que te quieres enfocar? (requerido)</legend> 
+        <label><input type="checkbox" value="programacion"/> programacion</label>
+        <label><input type="checkbox" value="derecho" /> derecho</label>
+        <label><input type="checkbox" value="streamer" /> streamer</label>
+        <label><input type="checkbox" value="mesero" /> mesero</label>
+        <label><input type="checkbox" value="mariachi"/> mariachi</label>
+        <label><input type="checkbox" value="nueva zelanda"/> nueva zelanda</label>
+      </div>
+     <div>
+        <label for="suggestions">Puedes Brindarnos sugerencias para mejorar     <textarea id="suggestions" placeholder=" que vas a sugerirnos papu"></textarea><label>
+      </div>
+
+
+      <div><input type="submit" value="Submit" id="submit"></div>
     </form>
   </body>
